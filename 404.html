@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
             margin: 0;
             overflow: hidden;
         }
+
         .container {
             text-align: center;
             padding: 20px;
@@ -23,36 +25,55 @@
             background-color: #0f8;
             animation: bounceIn 1s ease-out;
         }
+
         @keyframes bounceIn {
             0% {
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             100% {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         h1 {
             font-size: 36px;
             color: #123;
             margin-bottom: 20px;
         }
+
         p {
             font-size: 18px;
-            color: #616161;
+            color: #123;
             margin-top: 20px;
         }
+
+        a {
+            font-size: 30px;
+            color: #123;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-size: 60px;
+            color: #FFF;
+        }
+
         img {
             width: 300px;
+            margin-bottom: 10px;
             border-radius: 25px;
             animation: fadeIn 1s ease-out;
         }
+
         @keyframes fadeIn {
             0% {
                 opacity: 0;
                 transform: scale(0.8);
             }
+
             100% {
                 opacity: 1;
                 transform: scale(1);
@@ -60,11 +81,14 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <img src="https://cdn.dribbble.com/users/1138875/screenshots/4669703/404_animation.gif" alt="404 Not Found">
         <h1>D'oh!</h1>
-        <p>Looks like i have shifted from or never reached here, Let's navigate back together or embark on a new adventure!</p>
+        <p>Looks like i have shifted from or never reached here, Let's navigate <a href="harpreet.me">⇜</a> back
+            together or embark on a new adventure!</p>
     </div>
 </body>
+
 </html>
